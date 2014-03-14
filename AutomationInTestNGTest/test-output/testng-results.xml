@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="209" started-at="2014-03-13T09:25:39Z" finished-at="2014-03-13T09:25:39Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="209" started-at="2014-03-13T09:25:39Z" finished-at="2014-03-13T09:25:39Z">
+      <class name="com.unit.test.TestNGCaseBaseTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="beforeClass" is-config="true" duration-ms="70" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testOver()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="testOver" duration-ms="8" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="afterMethod" is-config="true" duration-ms="33" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testOver status=SUCCESS method=TestNGCaseBaseTests.testOver()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testReport()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="testReport" duration-ms="2" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReport -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="afterMethod" is-config="true" duration-ms="26" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testReport status=SUCCESS method=TestNGCaseBaseTests.testReport()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testResult()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="testResult" duration-ms="2" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResult -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="afterMethod" is-config="true" duration-ms="24" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testResult status=SUCCESS method=TestNGCaseBaseTests.testResult()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.unit.test.TestNGCaseBaseTests@6ec21a]" name="afterClass" is-config="true" duration-ms="22" started-at="2014-03-13T17:25:39Z" finished-at="2014-03-13T17:25:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.unit.test.TestNGCaseBaseTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
