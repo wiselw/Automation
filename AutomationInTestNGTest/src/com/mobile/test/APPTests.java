@@ -3,22 +3,23 @@ package com.mobile.test;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.internal.Coordinates;
+import org.openqa.selenium.interactions.HasTouchScreen;
+import org.openqa.selenium.interactions.TouchScreen;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.remote.RemoteTouchScreen;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 
-import com.mobile.test.SwipeableWebDriver;
-
-public class CtripTests {
-	  private WebDriver driver;
+public class APPTests {
+	private WebDriver driver;
 	  @BeforeMethod
 	  public void beforeMethod() throws MalformedURLException {
 		  //File classpathRoot = new File(System.getProperty("user.dir"));
@@ -34,25 +35,20 @@ public class CtripTests {
 	      capabilities.setCapability("app", app.getAbsolutePath());
 	      capabilities.setCapability("app-package", "ctrip.android.view");
 	      capabilities.setCapability("app-activity", "ctrip.android.view.home.CtripSplashActivity");
-	      driver = new SwipeableWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+	      driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+	      //driver = new SwipeableWebDriver(, capabilities);
 	  }
 	  @Test
 	  public void f() throws InterruptedException {
-		  Thread.sleep(10000);
-		   driver.navigate().forward();
-		   driver.navigate().forward();
+		  Thread.sleep(30000);
+		  // driver.navigate().forward();
+		  // driver.navigate().forward();
 		  //((SwipeableWebDriver)driver).getTouch().scroll(0, 0);
 		  System.out.println(driver.getPageSource());
 		  WebElement el = driver.findElement(By.name("ÎÒµÄÐ¯³Ì"));
 		  
 	      el.click();
-//	      Thread.sleep(5000);
-//	      List<WebElement> textFieldsList = driver.findElements(By.tagName("textfield"));
-//	      //Thread.sleep(5000);
-//	      textFieldsList.get(0).sendKeys("Some Name");
-//	      textFieldsList.get(2).sendKeys("Some@example.com");
-//	      driver.findElement(By.name("Save")).click();
-	      Thread.sleep(5000);
+	      Thread.sleep(50000);
 	  }
 	  @AfterMethod
 	  public void afterMethod() {

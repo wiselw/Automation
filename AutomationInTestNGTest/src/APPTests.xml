@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="com.mobile.test.CtripTests"/>
+      <class name="com.mobile.test.APPTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
