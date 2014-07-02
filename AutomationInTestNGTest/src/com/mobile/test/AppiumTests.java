@@ -18,7 +18,7 @@ import org.testng.annotations.AfterClass;
 
 public class AppiumTests {
   private WebDriver driver;
-  
+  //private AppiumDriver driver;
   @BeforeMethod
   public void beforeMethod() throws MalformedURLException {
 	  //File classpathRoot = new File(System.getProperty("user.dir"));
@@ -27,10 +27,13 @@ public class AppiumTests {
       File appPath =new File("D://adt-bundle-windows-x86");
       File app = new File(appPath, "ContactManager.apk");
       DesiredCapabilities capabilities = new DesiredCapabilities();
-      capabilities.setCapability("device","Android");
-      capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-      capabilities.setCapability(CapabilityType.VERSION, "4.4");
-      capabilities.setCapability(CapabilityType.PLATFORM, "MAC");
+      capabilities.setCapability("platformName", "Android");
+      capabilities.setCapability("deviceName", "1844d244");
+      capabilities.setCapability("platformVersion", "4.3");
+//      capabilities.setCapability("device","Android");
+//      capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
+//      capabilities.setCapability(CapabilityType.VERSION, "4.3");
+//      capabilities.setCapability(CapabilityType.PLATFORM, "MAC");
       capabilities.setCapability("app", app.getAbsolutePath());
       capabilities.setCapability("app-package", "com.example.android.contactmanager");
       capabilities.setCapability("app-activity", ".ContactManager");

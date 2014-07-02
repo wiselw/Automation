@@ -1,5 +1,6 @@
 package com.unit.test;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
@@ -9,6 +10,11 @@ import org.testng.annotations.AfterTest;
 import com.unity.TestNGCaseBase;
 
 public class TestNGCaseBaseTests extends TestNGCaseBase {
+	@BeforeMethod
+	public void beforeMethod(){
+		super.beforeMethod();
+		log.put("step0:beforeMethod", true);
+	}
   @Test
   public void testReport() {
 	  log.put("step1:≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘≤‚ ‘", true);

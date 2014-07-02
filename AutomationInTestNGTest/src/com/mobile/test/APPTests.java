@@ -26,7 +26,7 @@ public class APPTests {
 		  //D:/adt-bundle-windows-x86/ContactManager.apk
 	      //File appDir = new File(classpathRoot, "../../../apps/ContactManager");
 	      File appPath =new File("D://adt-bundle-windows-x86");
-	      File app = new File(appPath, "ctrip_531_9013.apk");
+	      File app = new File(appPath, "ctrip_540_9013.apk");
 	      DesiredCapabilities capabilities = new DesiredCapabilities();
 	      capabilities.setCapability("device","Android");
 	      capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
@@ -35,15 +35,19 @@ public class APPTests {
 	      capabilities.setCapability("app", app.getAbsolutePath());
 	      capabilities.setCapability("app-package", "ctrip.android.view");
 	      capabilities.setCapability("app-activity", "ctrip.android.view.home.CtripSplashActivity");
-	      driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-	      //driver = new SwipeableWebDriver(, capabilities);
+	      driver = new SwipeableWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 	  }
 	  @Test
 	  public void f() throws InterruptedException {
 		  Thread.sleep(30000);
 		  // driver.navigate().forward();
 		  // driver.navigate().forward();
-		  //((SwipeableWebDriver)driver).getTouch().scroll(0, 0);
+//		  js_snippet = "mobile: swipe"
+//				  args = {'startX':0.5, 'startY':0.2, 'startX':0.5, 'startY':0.95, 'tapCount':1, 'duration':10}
+//				  driver.execute_script(js_snippet, args)
+//		  ((SwipeableWebDriver)driver).executeScript(script, args)
+		  //WebElement slider =  driver.findElement(By.xpath("//window[1]/slider[1]"));
+		  //slider.sendKeys("0.1");
 		  System.out.println(driver.getPageSource());
 		  WebElement el = driver.findElement(By.name("ÎÒµÄÐ¯³Ì"));
 		  
@@ -54,4 +58,16 @@ public class APPTests {
 	  public void afterMethod() {
 		  driver.quit();
 	  }
+	  public class SwipeableWebDriver extends RemoteWebDriver implements HasTouchScreen {
+		          private RemoteTouchScreen touch;
+		  
+		           public SwipeableWebDriver(URL remoteAddress, Capabilities desiredCapabilities) {
+		               super(remoteAddress, desiredCapabilities);
+		               touch = new RemoteTouchScreen(getExecuteMethod());
+		           }
+		   
+		           public TouchScreen getTouch() {
+		               return touch;
+		           }
+		    }
 }

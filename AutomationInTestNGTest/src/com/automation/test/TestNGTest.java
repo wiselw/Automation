@@ -19,12 +19,19 @@ public class TestNGTest {
 	  //AssertJUnit.assertEquals(expected, actual)
 	  Reporter.log(s);
   }
+  
+  @Test(enabled=false)
+  public void TestCaseIgnored(){
+	  Reporter.log("我是被忽略的用例");
+  }
   @BeforeMethod
   public void beforeMethod() {
+	  Reporter.log("@BeforeMethod");
   }
 
   @AfterMethod
   public void afterMethod() {
+	  Reporter.log("@AfterMethod");
   }
 
 
@@ -37,26 +44,32 @@ public class TestNGTest {
   }
   @BeforeClass
   public void beforeClass() {
+	  Reporter.log("@BeforeClass");
   }
 
   @AfterClass
   public void afterClass() {
+	  Reporter.log("@AfterClass");
   }
 
   @BeforeTest
   public void beforeTest() {
+	  Reporter.log("@BeforeTest");
   }
 
   @AfterTest
   public void afterTest() {
+	  Reporter.log("@BeforeTest");
   }
 
   @BeforeSuite
   public void beforeSuite() {
+	  Reporter.log("@BeforeSuite");
   }
 
   @AfterSuite
   public void afterSuite() {
+	  Reporter.log("@AfterSuite");
   }
 
 }
